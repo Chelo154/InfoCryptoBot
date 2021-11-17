@@ -7,6 +7,7 @@ def config_bot(bot: Bot):
     load_ping(bot)
     load_check_crypto(bot)
     load_info_crypto(bot)
+    load_support(bot)
 
 
 def __setup_start__(bot:Bot):
