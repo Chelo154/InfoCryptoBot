@@ -13,7 +13,8 @@ def check_crypto_values(cryptos: list[str]) -> list[dict]:
 
     response = requests.get(url, params={
         'key': key,
-        'ids': crypto_params
+        'ids': crypto_params,
+        'interval': '1h'
     })
 
     response = response.json()
